@@ -47,3 +47,66 @@ export const MenuTitle = styled.h3`
 
   color: #fcfaf9;
 `;
+
+export const MenuText = styled.p`
+  margin-bottom: 36px;
+  font-family: "IBMreg";
+  font-size: 18px;
+  line-height: 1.56;
+  color: #fcfaf9;
+`;
+
+export const PriceCon = styled.div`
+  display: flex;
+  align-items: center;
+  & > p {
+    font-family: "IBMreg";
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: -0.2px;
+
+    color: #fcfaf9;
+  }
+`;
+
+export const Price = styled.h4`
+  margin-right: 16px;
+
+  font-family: "IBMbold";
+  font-size: 65px;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+
+  color: #fcfaf9;
+`;
+
+export const BtnCon = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 32px;
+
+  & > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 15px;
+    padding-bottom: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    & > img{
+        margin-right: 8px;
+    }
+  }
+
+  & > button:first-child {
+    margin-bottom: 16px;
+
+    background-color: #191826;
+    color: #fcfaf9;
+  }
+`;

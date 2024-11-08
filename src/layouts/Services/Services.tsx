@@ -1,4 +1,6 @@
 import mobilePic from "../../assets/pic/mobile.svg";
+import appleIcon from "../../assets/icons/apple.svg"
+import androidIcon from "../../assets/icons/android.svg"
 
 import * as SC from "./ServicesStyled";
 
@@ -10,15 +12,25 @@ const Services: React.FC = () => {
       </SC.ImageCon>
       <SC.Menu>
         <SC.MenuTitle>Premium EQ</SC.MenuTitle>
-        <p>
+        <SC.MenuText>
           Get expert-level control with a robust equalizer, volume mixer, and
           spatial audio. Take your listening experience to a whole new level and
           access all our incredible features!
-        </p>
-        <h4>
-          <span>$ 4</span>
-          month
-        </h4>
+        </SC.MenuText>
+        <SC.PriceCon>
+          <SC.Price>$4</SC.Price>
+          <p>/ month</p>
+        </SC.PriceCon>
+        <SC.BtnCon>
+          <button>
+            <img src={appleIcon} alt="apple" />
+            iOS Download
+          </button>
+          <button>
+            <img src={androidIcon} alt="android" />
+            Android Download
+          </button>
+        </SC.BtnCon>
       </SC.Menu>
     </SC.ServicesLayout>
   );
