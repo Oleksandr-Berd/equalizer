@@ -15,6 +15,16 @@ export const ServicesLayout = styled.div`
   background-position: 50%;
 
   border-radius: 12px;
+
+  @media (min-width: 768px) {
+    height: 600px;
+
+    margin-left: 33px;
+    margin-right: 39px;
+
+    background-position: 229px 0;
+    background-size: 280px 420px;
+  }
 `;
 
 export const ImageCon = styled.div`
@@ -22,6 +32,16 @@ export const ImageCon = styled.div`
   top: 98px;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: 768px) {
+    top: 0;
+    left: 0;
+    transform: translate(64px, -138px);
+    & > img {
+      width: 270px;
+      height: 556px;
+    }
+  }
 `;
 
 export const Menu = styled.div`
@@ -36,6 +56,22 @@ export const Menu = styled.div`
 
   background-color: #fa7453;
   border-radius: 12px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translate(-58px, 150px);
+
+    width: 272px;
+
+    margin-top: 0;
+    padding-left: 48px;
+    padding-top: 48px;
+    padding-right: 51px;
+    padding-bottom: 48px;
+  }
 `;
 
 export const MenuTitle = styled.h3`
@@ -95,11 +131,15 @@ export const BtnCon = styled.div`
     padding-top: 15px;
     padding-bottom: 14px;
 
+    font-family: "IBMbold";
+    font-size: 18px;
+    line-height: 1.78;
+
     border: none;
     border-radius: 12px;
 
-    & > img{
-        margin-right: 8px;
+    & > img {
+      margin-right: 8px;
     }
   }
 

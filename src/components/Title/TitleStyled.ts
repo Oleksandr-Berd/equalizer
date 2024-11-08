@@ -5,6 +5,11 @@ export const TitleCon = styled.div`
   padding-bottom: 166px;
 
   color: #191826;
+
+  @media (min-width: 768px){
+    padding-top: 95px;
+    padding-bottom: 249px;
+  }
 `;
 
 export const TitleStyled = styled.h3`

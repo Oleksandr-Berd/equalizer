@@ -8,11 +8,13 @@ import * as SC from "./FooterStyled"
 const Footer:React.FC = () => {
     return (
       <SC.FooterStyled>
-        <img src={logo} alt="logo" />
-        <SC.Text>
-          All rights reserved © Equalizer 2021 Have any problems? Contact us via
-          social media or email us at <span>equalizer@example.com</span>
-        </SC.Text>
+        <SC.TextCon>
+          <img src={logo} alt="logo" />
+          <SC.Text>
+            All rights reserved © Equalizer 2021 Have any problems? Contact us
+            via social media or email us at <span>equalizer@example.com</span>
+          </SC.Text>
+        </SC.TextCon>
         <SC.IconsCon>
           <img src={fbIcon} alt="fb" />
           <img src={instIcon} alt="inst" />
