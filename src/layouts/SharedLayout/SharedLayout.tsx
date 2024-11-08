@@ -1,8 +1,15 @@
+import * as SC from "./SharedLayoutStyled"
+
+import Header from "../Header/Header";
+import Title from "../../components/Title/Title";
+
 const SharedLayout = () => {
     return ( 
-        <div>
-            
-        </div>
+        <SC.SharedLayoutStyled>
+            <SC.GradientOverlay/>
+            <Header/>
+            <Title/>
+        </SC.SharedLayoutStyled>
      );
 }
  
