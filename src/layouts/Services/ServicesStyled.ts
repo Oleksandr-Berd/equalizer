@@ -18,9 +18,10 @@ export const ServicesLayout = styled.div`
 
   @media (min-width: 768px) {
     height: 600px;
+    max-width: 702px;
 
-    margin-left: 33px;
-    margin-right: 39px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-position: 229px 0;
     background-size: 280px 420px;
