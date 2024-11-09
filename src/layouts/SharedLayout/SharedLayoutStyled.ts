@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import tabletHeaderPic from "../../assets/pic/tabletHeaderPic.svg"
+import tabletHeaderPic from "../../assets/pic/tabletHeaderPic.svg";
 
 export const SharedLayoutStyled = styled.div`
   padding-left: 24px;
@@ -9,10 +9,15 @@ export const SharedLayoutStyled = styled.div`
 
   text-align: left;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     padding-left: 39px;
     padding-top: 62px;
     padding-right: 216px;
+  }
+
+  @media (min-width: 1220px) {
+    padding-left: 165px;
+    padding-right: 0;
   }
 `;
 
@@ -37,5 +42,8 @@ export const GradientOverlay = styled.div`
     background-repeat: no-repeat;
     background-position: top right;
     opacity: 1;
+  }
+  @media (min-width: 1220px){
+    background-size: 312px 468px;
   }
 `;

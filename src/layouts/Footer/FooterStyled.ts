@@ -18,11 +18,29 @@ export const FooterStyled = styled.footer`
     padding-right: 39px;
     padding-bottom: 85px;
   }
+
+  @media (min-width: 1220px){
+    padding-left: 165px;
+    padding-top: 202px;
+    padding-right: 165px;
+    padding-bottom: 91px;
+  }
 `;
 
 export const TextCon = styled.div`
   @media (min-width: 768px) {
     width: 326px;
+  }
+  @media (min-width: 1220px){
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+
+    width: auto;
+
+    & > *:first-child{
+      margin-right: 138px;
+    }
   }
 `;
 
@@ -38,6 +56,11 @@ export const Text = styled.p`
   & > span {
     font-family: "IBMbold";
   }
+
+  @media (min-width: 1220px){
+    width: 326px;
+    margin: 0;
+  }
 `;
 
 export const IconsCon = styled.div`
@@ -47,6 +70,17 @@ export const IconsCon = styled.div`
 
   & > *:not(:last-child) {
     margin-right: 20px;
+  }
+
+  & > * {
+    transition: fill 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      fill: #ffb964;
+      cursor: pointer;
+      transition: fill 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
   }
 `;
 

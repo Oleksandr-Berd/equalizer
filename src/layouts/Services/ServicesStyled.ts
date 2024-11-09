@@ -26,6 +26,10 @@ export const ServicesLayout = styled.div`
     background-position: 229px 0;
     background-size: 280px 420px;
   }
+
+  @media (min-width: 1220px){
+    max-width: calc(1220px - 165px * 2);
+  }
 `;
 
 export const ImageCon = styled.div`
@@ -149,5 +153,26 @@ export const BtnCon = styled.div`
 
     background-color: #191826;
     color: #fcfaf9;
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #66e2dc;
+      transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      cursor: pointer;
+    }
+  }
+
+  & > button:last-child {
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffb964;
+      transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      cursor: pointer;
+    }
   }
 `;
